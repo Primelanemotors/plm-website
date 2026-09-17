@@ -1,0 +1,51 @@
+{
+  "name": "Prime Lane Motors — Sales Command Centre",
+  "short_name": "PLM ACC",
+  "description": "Mobile Sales Command Centre & AI Agent Operational Cockpit for Prime Lane Motors",
+  "start_url": "/acc",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#101010",
+  "theme_color": "#131313",
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en-ZA",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Hot Leads",
+      "short_name": "Hot",
+      "description": "View urgent high-intent customer leads",
+      "url": "/acc?filter=hot",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Actionable Calls",
+      "short_name": "Calls",
+      "description": "Direct phone call queue",
+      "url": "/acc?filter=calls",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "VW Inventory",
+      "short_name": "Stock",
+      "description": "Check certified inventory & live installments",
+      "url": "/#inventory",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ],
+  "prefer_related_applications": false
+}
