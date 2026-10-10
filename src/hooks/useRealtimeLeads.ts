@@ -24,6 +24,11 @@ export const useRealtimeLeads = (): UseRealtimeLeadsReturn => {
   const [activities, setActivities] = useState<Activity[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [isConnected, setIsConnected] = useState<boolean>(false);
+
+if (leadsData && leadsData.length > 0) {
+  setLeads(leadsData as unknown as Lead[]);
+}
+  
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
 
   // 1. Fetch initial leads & activities
